@@ -1,0 +1,23 @@
+---
+src_root: /var/project
+nginx_hostname: hostname
+project_port: 3000
+project_name: project
+project_base_route: server/
+
+nvm_env: user
+nvm_default_node_version: stable
+
+nvm_node_versions:
+  - stable
+  - 4.2.1
+  - 0.12.7
+
+nvm_users:
+  - vagrant
+
+nvm_global_packages:
+  - bower
+  - grunt
+  # - avn
+  # - avn-nvm

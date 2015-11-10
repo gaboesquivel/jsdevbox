@@ -1,0 +1,12 @@
+---
+- hosts: all
+  user: vagrant
+  sudo: true
+  roles:
+    - { role: base }
+    - { role: mongodb }
+    - pablocrivella.nvm
+    - { role: avn }
+    # - { role: bower }
+    # - { role: grunt }
+    # - { role: nginx }
