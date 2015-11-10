@@ -3,5 +3,6 @@
 - name: setup avn
   become: yes
   become_user: vagrant
-  shell: . /home/vagrant/.nvm/nvm.sh; nvm use default; npm install -g avn avn-nvm; avn setup
-  #/home/vagrant
+  shell: . /home/vagrant/.nvm/nvm.sh && nvm use default && npm install -g avn avn-nvm && avn setup
+  args:
+    executable: /bin/bash
