@@ -1,3 +1,0 @@
-# ansible-bower
-
-Installs bower

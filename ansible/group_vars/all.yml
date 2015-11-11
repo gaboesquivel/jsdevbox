@@ -19,5 +19,5 @@ nvm_users:
 nvm_global_packages:
   - bower
   - grunt
-  # - avn
-  # - avn-nvm
+  - ionic
+  - cordova

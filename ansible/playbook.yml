@@ -4,9 +4,11 @@
   sudo: true
   roles:
     - { role: base }
-    - { role: mongodb }
     - pablocrivella.nvm
     - { role: avn }
-    # - { role: bower }
-    # - { role: grunt }
+    - { role: mongodb }
+    - DavidWittman.redis
+    - laggyluke.direnv
+    - williamyeh.oracle-java
+    - nickp666.android-sdk
     # - { role: nginx }

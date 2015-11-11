@@ -1,0 +1,13 @@
+---
+- name: Enable i386 arch in aptitude
+  command: dpkg --add-architecture i386
+  when: ansible_distribution_version == "14.04"
+
+- name: Install ia32-libs on 12.04
+  apt: pkg={{ item }} state=latest
+  when: ansible_distribution_version == "12.04"
+  with_items: ubuntu_precise_dependency_packages
+
+- name: Install build dependencies
+  apt: pkg={{ item }} state=latest
+  with_items: android_sdk_dependency_packages
