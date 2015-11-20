@@ -2,6 +2,8 @@
 
 A Vagrant Box for Hybrid and Node Apps Development
 
+__NOTE:  this is a work in progress. Contributions are welcome.__
+
 ## Includes
 
 * Git
